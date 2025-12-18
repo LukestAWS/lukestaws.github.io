@@ -25,17 +25,15 @@
         <div class="grid md:grid-cols-2 gap-8">
             
            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700">
-                <h3 class="text-2xl font-semibold mb-4">1. URL Shortener (Docker + FastAPI)</h3>
-                <p class="opacity-80 mb-4"><strong>LIVE PUBLIC DEMO:</strong> <a href="https://aws-url-shortener.fly.dev" class="text-blue-400 underline" target="_blank">aws-url-shortener.fly.dev</a></p>
-                <p class="opacity-80 mb-4">• Root: Custom health check → {"message":"LukestAWS URL Shortener – healthy"}</p>
-                <p class="opacity-80 mb-6">• Interactive API docs: <a href="https://aws-url-shortener.fly.dev/docs" class="text-blue-400 underline" target="_blank">/docs (Swagger UI)</a></p>
-                <p class="text-sm opacity-60">Week 1–2 • Local stack + Postgres + multi-stage Docker → Deployed on Fly.io</p>
-                <p class="text-sm opacity-60 font-bold text-green-400">Next: Full Redis caching live</p>
-               <!-- BONUS SCREENSHOTS – ADD THESE LINES -->
-                   <img src="url-shortener-healthy.png" alt="Healthy endpoint screenshot" class="mt-6 rounded-lg mx-auto max-w-full border border-gray-600">
-                    <img src="url-shortener-swagger.png" alt="Swagger UI screenshot" class="mt-6 rounded-lg mx-auto max-w-full border border-gray-600">
-                       <img src="Redis_hit.png" alt="Healthy endpoint screenshot" class="mt-6 rounded-lg mx-auto max-w-full border border-gray-600">
-                    </div>
+    <h3 class="text-2xl font-semibold mb-4">1. URL Shortener (Docker + FastAPI)</h3>
+    <p class="opacity-80 mb-4"><strong>LIVE PUBLIC DEMO:</strong> <a href="https://aws-url-shortener.fly.dev" class="text-blue-400 underline" target="_blank">aws-url-shortener.fly.dev</a></p>
+    <p class="opacity-80 mb-4">• Interactive API docs: <a href="https://aws-url-shortener.fly.dev/docs" class="text-blue-400 underline" target="_blank">/docs (Swagger UI)</a></p>
+    <p class="opacity-80 mb-4 font-bold text-green-400">Redis caching LIVE (serverless Upstash) – public cache hit proof + GitHub Actions CI/CD auto-deploy</p>
+    <p class="text-sm opacity-60 mb-6">Week 1 • Dockerised stack + Postgres + Fly.io deploy + Redis caching with 'cached': true flag + CI/CD</p>
+
+    <img src="public-redis-new-url.png" alt="Public Redis new URL" class="mt-6 rounded-lg mx-auto max-w-full border border-gray-600">
+    <img src="public-redis-cache-hit.png" alt="Public Redis cache hit – cached: true" class="mt-6 rounded-lg mx-auto max-w-full border border-green-500">
+</div>
 
             
             <div class="bg-gray-800 p-8 rounded-xl border border-gray-700">
