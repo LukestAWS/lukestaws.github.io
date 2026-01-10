@@ -27,27 +27,25 @@
     </span>
 </div>
             
-           <div class="bg-gray-800 p-8 rounded-xl border border-gray-700">
-    <h3 class="text-2xl font-semibold mb-4">1. URL Shortener (Docker + FastAPI)</h3>
-    <p class="opacity-80 mb-4"><strong>LIVE PUBLIC DEMO:</strong> <a href="https://aws-url-shortener.fly.dev" class="text-blue-400 underline" target="_blank">aws-url-shortener.fly.dev</a></p>
-    <p class="opacity-80 mb-4">• Interactive API docs: <a href="https://aws-url-shortener.fly.dev/docs" class="text-blue-400 underline" target="_blank">/docs (Swagger UI)</a></p>
-    <p class="opacity-80 mb-4 font-bold text-green-400">Redis caching LIVE (serverless Upstash) – public cache hit proof + GitHub Actions CI/CD auto-deploy</p>
-    <p class="text-sm opacity-60 mb-6">Week 1 • Dockerised stack + Postgres + Fly.io deploy + Redis caching with 'cached': true flag + CI/CD</p>
+           <!-- Projects Grid – Compact & Responsive -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto px-4">
+    <!-- URL Shortener Card -->
+    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all">
+        <h3 class="text-xl font-semibold mb-4">1. URL Shortener (Docker + FastAPI)</h3>
+        <p class="opacity-80 mb-4"><strong>LIVE:</strong> <a href="https://aws-url-shortener.fly.dev" class="text-blue-400 underline" target="_blank">aws-url-shortener.fly.dev</a></p>
+        <p class="opacity-80 mb-4">Redis caching + CI/CD + Swagger docs</p>
+        <p class="text-sm opacity-60">Week 1–2</p>
+        <img src="url-shortener-screenshot.png" alt="URL Shortener Demo" class="mt-4 rounded-lg w-full">
+    </div>
 
-    <img src="public-redis-new-url.png" alt="Public Redis new URL" class="mt-6 rounded-lg mx-auto max-w-full border border-gray-600">
-    <img src="public-redis-cache-hit.png" alt="Public Redis cache hit – cached: true" class="mt-6 rounded-lg mx-auto max-w-full border border-green-500">
-</div>
-
-            
-            <div class="bg-gray-800 p-8 rounded-xl border border-gray-700">
-    <h3 class="text-2xl font-semibold mb-4">2. LaunchList SaaS (CDK Serverless)</h3>
-    <p class="opacity-80 mb-4"><strong>LIVE PUBLIC DEMO:</strong> <a href="https://d1psz3m8fwuyiu.cloudfront.net" class="text-blue-400 underline" target="_blank">d1psz3m8fwuyiu.cloudfront.net</a></p>
-    <p class="opacity-80 mb-4">• Waitlist form coming soon (React frontend + Cognito auth + SES emails)</p>
-    <p class="opacity-80 mb-4 font-bold text-green-400">Full CDK IaC: S3+CloudFront, DynamoDB, Lambda+API GW, Cognito, SES</p>
-    <p class="text-sm opacity-60 mb-6">Week 3–4 • Serverless SaaS built in public • £0 cost on free tier</p>
-
-    
-    <img src="launchlist-coming-soon.png" alt="LaunchList Coming Soon Page" class="mt-6 rounded-lg mx-auto max-w-full border border-gray-600">
+    <!-- LaunchList SaaS Card -->
+    <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500 transition-all">
+        <h3 class="text-xl font-semibold mb-4">2. LaunchList SaaS (CDK Serverless)</h3>
+        <p class="opacity-80 mb-4"><strong>LIVE:</strong> <a href="https://d1psz3m8fwuyiu.cloudfront.net" class="text-blue-400 underline" target="_blank">d1psz3m8fwuyiu.cloudfront.net</a></p>
+        <p class="opacity-80 mb-4">DynamoDB + Lambda + API GW + Cognito auth</p>
+        <p class="text-sm opacity-60">Week 3–4</p>
+        <img src="launchlist-coming-soon.png" alt="LaunchList Coming Soon" class="mt-4 rounded-lg w-full">
+    </div>
 </div>
             <div class="bg-gray-800 p-8 rounded-xl border border-gray-700">
                 <h3 class="text-2xl font-semibold mb-4">3. E-commerce Platform (ECS Fargate + Stripe)</h3>
